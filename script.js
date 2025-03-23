@@ -104,3 +104,8 @@ function initFormSubmission() {
 function updateDateTime() {
     document.getElementById("datetime").innerHTML = new Date().toLocaleString();
 }
+
+function toggleMobileActions() {
+    const actions = document.querySelector('.mobile-actions');
+    actions.style.display = actions.style.display === 'grid' ? 'none' : 'grid';
+}
