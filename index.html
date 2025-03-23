@@ -7,29 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-        <div id="mobileWarning">
-            <div id="warningBox">
-                <h2>🚫View Not Supported </h2>
-                <p>Please use a desktop for the best experience.</p>
-            </div>
-        </div>
-        <script>
-            function checkScreenSize() {
-                let isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-                let screenWidth = window.innerWidth;
-                let warning = document.getElementById("mobileWarning");
     
-                if (isMobile || screenWidth < 650) {
-                    warning.style.display = "block";
-                    document.body.style.overflow = "hidden"; 
-                } else {
-                    warning.style.display = "none";
-                    document.body.style.overflow = "auto";
-                }
-            }
-            window.onload = checkScreenSize;
-            window.onresize = checkScreenSize;
-        </script>
 <header class="header-area">
     <div class="menu-container">
         <div class="navbar-brand">
@@ -49,9 +27,16 @@
             <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()">🌙</button>
             <button class="download-btn" onclick="downloadCV()">Download  CV📥</button>
         </div>
+        <button class="toggle-actions" onclick="toggleMobileActions()">☰</button>
+        <div class="mobile-actions">
+            <button class="theme-btn" onclick="toggleTheme()">🌙 Mode</button>
+            <button class="download-btn" onclick="downloadCV()">📥 CV</button>
+        </div>
+
     </div>
 </header>
 
+    
 <main>
     <main>
         <section id="home" class="content-section active">
@@ -69,7 +54,7 @@
                     <div class="profile-scroll-container">
                         <h2>Hi 👋, I'm Abdul Khaja Shabuddin </h2>
                         <p>Electronics and Communication Engineering</p>
-                        <p>A portfolio highlighting my projects, research, education, and technical skills in VLSI, embedded systems, and digital verification. Browse my work, achievements, and research in high-speed circuits, optical sensors, and semiconductor technology.</p>
+                        <p>A portfolio highlighting my projects, research, education, and technical skills in VLSI, embedded systems, and digital verification. <br> Browse my work, achievements, and research in high-speed circuits, optical sensors, and semiconductor technology.</p>
                     </div>
                 </div>
             </div>
@@ -79,8 +64,6 @@
     <section id="profile" class="content-section">
         <h2>About Me</h2>
         <div class="about-box">
-            <p>I am a full-stack developer passionate about learning new technologies and solving real-world problems.</p>
-            <p>I specialize in front-end and back-end development, working with various frameworks and languages to create user-friendly applications.</p>
         </div>
 
         <div class="skills">
@@ -178,6 +161,18 @@
         <h2>Certificates</h2>
         <div class="scroll-wrapper">
             <div class="scroll-container">
+                <div class="certificates-box">
+                    <h3>Embedded System Developer </h3>
+                    <h4>APSCHE Supported by EduSkills</h4>
+                    <p>A Short-Term Certification in Embedded System Developer by EduSkills </p>
+                    <img src="profileimg/certificate/Short_Embedded_System_Developer.pdf" alt="Embedded System Developer & UVM Certification" />
+                </div>
+                <div class="certificates-box">
+                    <h3>Embedded System Developer </h3>
+                    <h4>National Intership Supported By Microchip</h4>
+                    <p>Certification in Embedded System Developer Virtual Instership </p>
+                    <img src="profileimg/certificate/Embedded_System_Developer.pdf" alt="Embedded System Developer & UVM Certification" />
+                </div>
                 <div class="certificates-box">
                     <h3>SystemVerilog & UVM Certification</h3>
                     <h4>Taras Systems and Solutions</h4>
