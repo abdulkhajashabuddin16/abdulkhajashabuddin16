@@ -30,8 +30,7 @@
 
 - ✉️ [Email](mailto:abdulkhajashabuddin167@gmail.com)  
 - 🔗 [LinkedIn](https://linkedin.com/in/abdulkhajashabuddin16)  
-- 🌐 [Portfolio](https://abdulkhajashabuddin16.github.io/abdulkhajashabuddin16)
-
+- 🌐 [Portfolio]([https://abdulkhajashabuddin16.github.io/abdulkhajashabuddin16](https://abdulkhajashabuddin.netlify.app/))
 
 ---
 ### 🗣 *“Think logically.”*
